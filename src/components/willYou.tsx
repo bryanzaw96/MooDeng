@@ -75,10 +75,12 @@ Bryan`;
           </div>
         ) : (
           <div className="relative z-10 w-screen h-screen flex items-center justify-center p-8 animate-fadeIn">
-            <div className="bg-white bg-opacity-90 p-8 rounded-lg max-w-2xl overflow-y-auto max-h-[80vh]">
-              <p className="whitespace-pre-wrap font-['Merriweather'] text-lg">
-                {loveLetter}
-              </p>
+            <div className="bg-white bg-opacity-90 p-8 rounded-lg max-w-2xl h-[80vh] overflow-hidden">
+              <div className="overflow-y-auto h-full">
+                <p className="whitespace-pre-wrap font-['Merriweather'] text-lg">
+                  {loveLetter}
+                </p>
+              </div>
             </div>
           </div>
         )}
